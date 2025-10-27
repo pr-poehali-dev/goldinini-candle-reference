@@ -87,9 +87,7 @@ const Index = () => {
               <h2 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-6">
                 Создаём атмосферу тепла и уюта
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Премиальные ароматические свечи ручной работы из натурального соевого воска
-              </p>
+              <p className="text-lg text-muted-foreground mb-8">Премиальные ароматические свечи ручной работы из натурального соевого и кокосового воска</p>
               <Button size="lg" onClick={() => scrollToSection('catalog')} className="text-lg px-8">
                 Смотреть каталог
               </Button>
