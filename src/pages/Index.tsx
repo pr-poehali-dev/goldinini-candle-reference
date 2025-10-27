@@ -9,7 +9,7 @@ const candles = [
     name: 'Лавандовый сон',
     description: 'Успокаивающий аромат лаванды',
     price: '2 490',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/9420e5a4-5c9e-4b2e-94e6-98c001b701f2.jpg',
+    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/2f0dede4-cb4a-46d4-93d8-6c3b6e2f311e.jpg',
     time: '45 часов'
   },
   {
@@ -17,7 +17,7 @@ const candles = [
     name: 'Ванильный уют',
     description: 'Тёплый сладкий аромат ванили',
     price: '2 490',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/ad7d0e93-690f-4655-bf2a-eadbf72ca009.jpg',
+    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/b0cd102e-c57f-42f2-8e1a-e2b67cb84af9.jpg',
     time: '45 часов'
   },
   {
@@ -25,7 +25,7 @@ const candles = [
     name: 'Цитрусовая свежесть',
     description: 'Бодрящий аромат цитрусовых',
     price: '2 490',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e7301f50-0f5f-4a7b-be3b-e29f2d3e1148.jpg',
+    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/752e1119-3744-41e9-b8f2-b4dbf5495cbc.jpg',
     time: '45 часов'
   },
   {
@@ -33,7 +33,7 @@ const candles = [
     name: 'Древесные ноты',
     description: 'Благородный аромат сандала и кедра',
     price: '2 690',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/9420e5a4-5c9e-4b2e-94e6-98c001b701f2.jpg',
+    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/5d7a0bf3-3934-498a-9802-3923fa05a99f.jpg',
     time: '50 часов'
   },
   {
@@ -41,7 +41,7 @@ const candles = [
     name: 'Морской бриз',
     description: 'Свежий аромат океана',
     price: '2 490',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/ad7d0e93-690f-4655-bf2a-eadbf72ca009.jpg',
+    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/b0cd102e-c57f-42f2-8e1a-e2b67cb84af9.jpg',
     time: '45 часов'
   },
   {
@@ -49,7 +49,7 @@ const candles = [
     name: 'Цветочная гармония',
     description: 'Нежный букет жасмина и розы',
     price: '2 690',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e7301f50-0f5f-4a7b-be3b-e29f2d3e1148.jpg',
+    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/2f0dede4-cb4a-46d4-93d8-6c3b6e2f311e.jpg',
     time: '50 часов'
   }
 ];
@@ -87,7 +87,9 @@ const Index = () => {
               <h2 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-6">
                 Создаём атмосферу тепла и уюта
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">Премиальные ароматические свечи ручной работы из натурального соевого и кокосового воска</p>
+              <p className="text-lg text-muted-foreground mb-8">
+                Премиальные ароматические свечи ручной работы из натурального соевого воска
+              </p>
               <Button size="lg" onClick={() => scrollToSection('catalog')} className="text-lg px-8">
                 Смотреть каталог
               </Button>
@@ -141,7 +143,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e7301f50-0f5f-4a7b-be3b-e29f2d3e1148.jpg" 
+                src="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/faf750dd-3cc6-42b6-8d4e-7420c91a99e9.jpg" 
                 alt="Производство свечей" 
                 className="rounded-lg shadow-lg"
               />
