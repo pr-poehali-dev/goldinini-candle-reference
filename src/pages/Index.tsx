@@ -340,7 +340,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-background/20 pt-8 text-center text-sm opacity-60">
-            <p>© 2024 Goldinini. Все права защищены.</p>
+            <p>© 2025 Goldinini. Все права защищены.</p>
           </div>
         </div>
       </footer>
