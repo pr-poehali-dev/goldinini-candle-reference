@@ -90,10 +90,8 @@ const Index = () => {
               <h2 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-6">
                 Создаём атмосферу тепла и уюта
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Премиальные ароматические свечи ручной работы из натурального соевого воска. 
-                Каждая свеча — это уникальное сочетание изысканных ароматов и безупречного качества.
-              </p>
+              <p className="text-lg text-muted-foreground mb-8">Премиальные ароматические свечи ручной работы из натурального соевого и кокосового воска.
+Каждая свеча - это уникальное сочетание изысканных ароматов и безупречного качества.</p>
               <Button size="lg" onClick={() => scrollToSection('catalog')} className="text-lg px-8">
                 Смотреть каталог
                 <Icon name="ArrowRight" size={20} className="ml-2" />
