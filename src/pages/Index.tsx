@@ -274,20 +274,30 @@ const Index = () => {
               </CardContent>
             </Card>
             
+            <a href="https://t.me/sidr_07" target="_blank" rel="noopener noreferrer">
+              <Card className="inline-block hover:shadow-lg transition-shadow cursor-pointer">
+                <CardContent className="p-6 flex items-center gap-3">
+                  <Icon name="Send" size={20} className="text-primary" />
+                  <span className="font-medium">@sidr_07</span>
+                </CardContent>
+              </Card>
+            </a>
+            
             <Card className="inline-block">
               <CardContent className="p-6 flex items-center gap-3">
                 <Icon name="Send" size={20} className="text-primary" />
-                <span className="font-medium">@sidr_07</span>
+                <span className="font-medium">Второй контакт</span>
               </CardContent>
             </Card>
-            
 
           </div>
           
-          <Button size="lg" className="text-lg px-8">
-            <Icon name="MessageCircle" size={20} className="mr-2" />
-            Написать в WhatsApp
-          </Button>
+          <a href="https://wa.me/79872833543" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="text-lg px-8">
+              <Icon name="MessageCircle" size={20} className="mr-2" />
+              Написать в WhatsApp
+            </Button>
+          </a>
         </div>
       </section>
 
@@ -322,7 +332,9 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Соцсети</h4>
               <div className="flex gap-4">
-                <Icon name="Send" size={24} className="opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
+                <a href="https://t.me/goldinini_candles" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" size={24} className="opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
+                </a>
               </div>
             </div>
           </div>
