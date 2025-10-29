@@ -164,8 +164,7 @@ const Index = () => {
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li></li>
                       <li></li>
-                      <li>• СДЭК, Почта России
-• Если Вы из Казани, доставка осуществляется лично производителем</li>
+                      <li>• СДЭК, Почта России</li>
                     </ul>
                   </div>
                 </div>
