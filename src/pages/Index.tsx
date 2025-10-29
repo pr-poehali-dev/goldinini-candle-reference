@@ -167,7 +167,7 @@ const Index = () => {
                     <span>15 часов горения</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-primary">1300</span>
+                    <span className="text-2xl font-bold text-primary">1200</span>
                     <Button>
                       В корзину
                     </Button>
