@@ -190,10 +190,8 @@ const Index = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-4xl font-serif font-bold mb-6">О бренде Goldinini</h2>
-              <p className="text-muted-foreground mb-4">
-                Мы создаём свечи с душой, вручную подбирая каждый компонент. Используем только натуральный соевый воск, безопасные красители и премиальные ароматические масла высочайшего качества.
-              </p>
+              <h2 className="text-4xl font-serif font-bold mb-6">Философия бренда</h2>
+              <p className="text-muted-foreground mb-4">Мы создаём свечи с душой, вручную подбирая каждый компонент. Используем только натуральный соевый и кокосовый воск, безопасные красители и премиальные ароматические масла высочайшего качества.</p>
               <p className="text-muted-foreground mb-6">
                 Каждая свеча проходит строгий контроль качества и тестирование. Мы гордимся тем, что наши свечи горят долго, ровно и наполняют пространство изысканным ароматом, создавая атмосферу тепла и уюта в вашем доме.
               </p>
@@ -203,11 +201,11 @@ const Index = () => {
                   <div className="text-sm text-muted-foreground">Натуральный воск</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">45+</div>
+                  <div className="text-4xl font-bold text-primary mb-2">15+</div>
                   <div className="text-sm text-muted-foreground">Часов горения</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">50+</div>
+                  <div className="text-4xl font-bold text-primary mb-2">7+</div>
                   <div className="text-sm text-muted-foreground">Уникальных ароматов</div>
                 </div>
               </div>
