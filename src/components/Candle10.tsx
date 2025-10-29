@@ -1,9 +1,15 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { useNavigate } from 'react-router-dom';
 
 const Candle10 = () => {
+  const navigate = useNavigate();
+  
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
+    <Card 
+      className="overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer"
+      onClick={() => navigate('/candle/10')}
+    >
       <div className="aspect-square overflow-hidden bg-secondary/20">
         <img 
           src="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg"
@@ -16,7 +22,9 @@ const Candle10 = () => {
         <p className="text-muted-foreground mb-4 text-sm">Насыщенный аромат горького шоколада</p>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-primary">2 890 ₽</span>
-          <Button>
+          <Button onClick={(e) => {
+            e.stopPropagation();
+          }}>
             В корзину
           </Button>
         </div>
