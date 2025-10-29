@@ -246,7 +246,7 @@ const Index = () => {
                 <li></li>
                 <li></li>
                 <li></li>
-                <li>Все ароматы</li>
+                <li>Все свечи</li>
               </ul>
             </div>
             
