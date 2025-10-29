@@ -256,9 +256,7 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Соцсети</h4>
               <div className="flex gap-4">
-                <Icon name="Instagram" size={24} className="opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
-                <Icon name="Facebook" size={24} className="opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
-                <Icon name="Youtube" size={24} className="opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
+                <Icon name="Send" size={24} className="opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
               </div>
             </div>
           </div>
