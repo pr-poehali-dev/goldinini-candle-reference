@@ -28,7 +28,7 @@ const CandleCard = ({ name, description, price, image, time }: CandleCardProps) 
           <span>{time}</span>
         </div>
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-primary">{price} ₽</span>
+          <span className="text-2xl font-bold text-primary">1200 </span>
           <Button>
             В корзину
           </Button>
