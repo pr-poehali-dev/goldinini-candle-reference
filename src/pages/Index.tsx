@@ -255,7 +255,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm opacity-80">
                 <li>О бренде</li>
                 <li>Доставка и оплата</li>
-                <li>Возврат и обмен</li>
+                <li></li>
                 <li>Контакты</li>
               </ul>
             </div>
