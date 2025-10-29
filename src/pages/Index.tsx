@@ -159,14 +159,14 @@ const Index = () => {
                 <div className="flex items-start gap-4">
                   <Icon name="Truck" size={32} className="text-primary flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Доставка по России</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-left">Доставка по России</h3>
                     <p className="text-muted-foreground mb-3"></p>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li></li>
                       <li></li>
-                      <li>• СДЭК, Почта России
-
-• Если Вы из Казани, доставка осуществляется лично производителем </li>
+                      <li>• СДЭК, Почта России, Яндекс доставка тп
+• Если Вы из Казани, доставка осуществляется лично производителем
+</li>
                     </ul>
                   </div>
                 </div>
