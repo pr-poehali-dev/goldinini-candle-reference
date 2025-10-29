@@ -218,7 +218,7 @@ const Index = () => {
             <Card className="inline-block">
               <CardContent className="p-6 flex items-center gap-3">
                 <Icon name="Instagram" size={20} className="text-primary" />
-                <span className="font-medium">@goldinini_candles</span>
+                <span className="font-medium"></span>
               </CardContent>
             </Card>
           </div>
