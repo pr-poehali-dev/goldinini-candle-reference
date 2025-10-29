@@ -334,7 +334,7 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Соцсети</h4>
               <div className="flex gap-4">
-                <a href="https://t.me/goldinini_candles" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/Milen_2003" target="_blank" rel="noopener noreferrer">
                   <Icon name="Send" size={24} className="opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
                 </a>
               </div>
