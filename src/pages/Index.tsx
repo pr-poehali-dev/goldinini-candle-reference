@@ -270,7 +270,10 @@ const Index = () => {
             <Card className="inline-block">
               <CardContent className="p-6 flex items-center gap-3">
                 <Icon name="Phone" size={20} className="text-primary" />
-                <span className="font-medium">+7 (987) 283-35-43</span>
+                <div>
+                  <div className="font-medium">+7 (987) 283-35-43</div>
+                  <div className="text-sm text-muted-foreground">Производитель</div>
+                </div>
               </CardContent>
             </Card>
             
