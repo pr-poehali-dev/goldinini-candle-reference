@@ -243,9 +243,9 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Каталог</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>Новинки</li>
-                <li>Бестселлеры</li>
-                <li>Подарочные наборы</li>
+                <li></li>
+                <li></li>
+                <li></li>
                 <li>Все ароматы</li>
               </ul>
             </div>
