@@ -160,13 +160,11 @@ const Index = () => {
                   <Icon name="Truck" size={32} className="text-primary flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Доставка по России</h3>
-                    <p className="text-muted-foreground mb-3">
-                      Бесплатная доставка при заказе от 5000 ₽
-                    </p>
+                    <p className="text-muted-foreground mb-3"></p>
                     <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• Москва и МО — 1-2 дня</li>
-                      <li>• Регионы России — 3-7 дней</li>
-                      <li>• СДЭК, Boxberry, Почта России</li>
+                      <li></li>
+                      <li></li>
+                      <li>• СДЭК, Почта России</li>
                     </ul>
                   </div>
                 </div>
