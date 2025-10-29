@@ -134,7 +134,7 @@ const Index = () => {
                 <Icon name="Clock" size={28} className="text-primary" />
               </div>
               <div>
-                <h3 className="font-serif font-semibold text-lg mb-2">До 50 часов</h3>
+                <h3 className="font-serif font-semibold text-lg mb-2">До 15 часов</h3>
                 <p className="text-muted-foreground text-sm">Долгое и равномерное горение без копоти</p>
               </div>
             </div>
