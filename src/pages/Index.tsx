@@ -8,6 +8,12 @@ import Candle3 from '@/components/Candle3';
 import Candle4 from '@/components/Candle4';
 import Candle5 from '@/components/Candle5';
 import Candle6 from '@/components/Candle6';
+import Candle7 from '@/components/Candle7';
+import Candle8 from '@/components/Candle8';
+import Candle9 from '@/components/Candle9';
+import Candle10 from '@/components/Candle10';
+import Candle11 from '@/components/Candle11';
+import Candle12 from '@/components/Candle12';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -113,6 +119,12 @@ const Index = () => {
             <Candle4 />
             <Candle5 />
             <Candle6 />
+            <Candle7 />
+            <Candle8 />
+            <Candle9 />
+            <Candle10 />
+            <Candle11 />
+            <Candle12 />
           </div>
         </div>
       </section>
@@ -122,7 +134,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img 
-                src="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/05f573ab-79d0-468a-8edd-cf2397631ef2.jpg" 
+                src="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg" 
                 alt="Производство свечей" 
                 className="rounded-lg shadow-lg"
               />
