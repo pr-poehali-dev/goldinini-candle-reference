@@ -28,6 +28,7 @@ const Index = () => {
               <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary transition-colors">Главная</button>
               <button onClick={() => scrollToSection('catalog')} className="text-foreground hover:text-primary transition-colors">Каталог</button>
               <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">О бренде</button>
+              <button onClick={() => scrollToSection('certificate')} className="text-foreground hover:text-primary transition-colors">Сертификат</button>
               <button onClick={() => scrollToSection('delivery')} className="text-foreground hover:text-primary transition-colors">Доставка</button>
               <button onClick={() => scrollToSection('contacts')} className="text-foreground hover:text-primary transition-colors">Контакты</button>
             </div>
@@ -142,6 +143,58 @@ const Index = () => {
                 <div className="text-center">
                   <div className="text-4xl font-bold text-primary mb-2">7+</div>
                   <div className="text-sm text-muted-foreground">Уникальных ароматов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificate" className="py-20 px-4 bg-primary/5">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-4xl font-serif font-bold text-center mb-4">Профессиональное мастерство</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Наш мастер прошел профессиональное обучение искусству свечеварения и имеет официальный сертификат
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img 
+                src="https://cdn.poehali.dev/files/bab9f756-1d2d-46d4-a522-ba4a6538d07d.png" 
+                alt="Сертификат о прохождении курса по свечеварению" 
+                className="rounded-lg shadow-2xl w-full"
+              />
+            </div>
+            <div>
+              <div className="mb-6">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Icon name="Award" size={28} className="text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-semibold text-xl mb-2">Сертифицированный мастер</h3>
+                    <p className="text-muted-foreground">Наш производитель успешно завершил профессиональный онлайн-курс по литью свечей и аромасаше в школе WaxFlame</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Icon name="Sparkles" size={28} className="text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-semibold text-xl mb-2">Экспертные знания</h3>
+                    <p className="text-muted-foreground">Глубокое понимание работы с натуральным воском, ароматическими композициями и технологии изготовления</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Icon name="CheckCircle" size={28} className="text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-semibold text-xl mb-2">Качество гарантировано</h3>
+                    <p className="text-muted-foreground">Каждая свеча создается с применением профессиональных техник и соблюдением всех стандартов качества</p>
+                  </div>
                 </div>
               </div>
             </div>
