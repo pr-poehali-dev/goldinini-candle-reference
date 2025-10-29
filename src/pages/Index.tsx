@@ -278,7 +278,10 @@ const Index = () => {
               <Card className="inline-block hover:shadow-lg transition-shadow cursor-pointer">
                 <CardContent className="p-6 flex items-center gap-3">
                   <Icon name="Send" size={20} className="text-primary" />
-                  <span className="font-medium">@sidr_07</span>
+                  <div>
+                    <div className="font-medium">@sidr_07</div>
+                    <div className="text-sm text-muted-foreground">Производитель</div>
+                  </div>
                 </CardContent>
               </Card>
             </a>
@@ -287,7 +290,10 @@ const Index = () => {
               <Card className="inline-block hover:shadow-lg transition-shadow cursor-pointer">
                 <CardContent className="p-6 flex items-center gap-3">
                   <Icon name="Send" size={20} className="text-primary" />
-                  <span className="font-medium">@lizassxs</span>
+                  <div>
+                    <div className="font-medium">@lizassxs</div>
+                    <div className="text-sm text-muted-foreground">Менеджер</div>
+                  </div>
                 </CardContent>
               </Card>
             </a>
