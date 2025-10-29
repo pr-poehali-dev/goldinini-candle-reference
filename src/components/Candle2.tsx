@@ -15,10 +15,6 @@ const Candle2 = () => {
       <CardContent className="p-6">
         <h3 className="text-xl font-serif font-semibold mb-2">Ванильный уют</h3>
         <p className="text-muted-foreground mb-4 text-sm">Тёплый сладкий аромат для домашнего комфорта</p>
-        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-          <Icon name="Flame" size={16} />
-          <span>45 часов горения</span>
-        </div>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-primary">2 490 ₽</span>
           <Button>
