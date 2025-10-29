@@ -72,7 +72,8 @@ const Index = () => {
               </div>
               <div>
                 <h3 className="font-serif font-semibold text-lg mb-2">100% натурально</h3>
-                <p className="text-muted-foreground text-sm">Только соевый воск и эфирные масла премиум-класса</p>
+                <p className="text-muted-foreground text-sm">Только соевый и кокосовый воск
+</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
