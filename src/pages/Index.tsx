@@ -181,7 +181,7 @@ const Index = () => {
                       Выберите удобный для вас способ
                     </p>
                     <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• Банковские карты</li>
+                      <li></li>
                       <li>• СБП (Система быстрых платежей)</li>
                       <li>• Наличными при получении</li>
                     </ul>
