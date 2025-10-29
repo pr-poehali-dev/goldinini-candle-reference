@@ -7,7 +7,7 @@ const Candle6 = () => {
     <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
       <div className="aspect-square overflow-hidden bg-secondary/20">
         <img 
-          src="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/66ca1302-d104-4bc2-b98f-a9bbd4a9a6f1.jpg"
+          src="https://cdn.poehali.dev/files/aedde759-4c17-4ccc-ada4-89f4f6ec3433.png"
           alt="Цветочная гармония"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
