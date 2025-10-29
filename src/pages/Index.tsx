@@ -2,57 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
-
-const candles = [
-  {
-    id: 1,
-    name: 'Лавандовый сон',
-    description: 'Успокаивающий аромат лаванды для крепкого сна',
-    price: '2 490',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/66ca1302-d104-4bc2-b98f-a9bbd4a9a6f1.jpg',
-    time: '45 часов'
-  },
-  {
-    id: 2,
-    name: 'Ванильный уют',
-    description: 'Тёплый сладкий аромат для домашнего комфорта',
-    price: '2 490',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/a5b93351-195d-49ee-ac65-3e63fcab40a6.jpg',
-    time: '45 часов'
-  },
-  {
-    id: 3,
-    name: 'Цитрусовая свежесть',
-    description: 'Бодрящий аромат апельсина и лимона',
-    price: '2 490',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/75938731-724b-4352-bd6a-d6b0604d9bb0.jpg',
-    time: '45 часов'
-  },
-  {
-    id: 4,
-    name: 'Древесные ноты',
-    description: 'Благородный аромат сандала и кедра',
-    price: '2 690',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/dff2e544-bf90-4086-a9ed-75d11a798add.jpg',
-    time: '50 часов'
-  },
-  {
-    id: 5,
-    name: 'Морской бриз',
-    description: 'Свежий аромат океана и морской соли',
-    price: '2 490',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/6f5539a4-783c-4708-aa11-0e546778138c.jpg',
-    time: '45 часов'
-  },
-  {
-    id: 6,
-    name: 'Цветочная гармония',
-    description: 'Нежный букет жасмина и розы',
-    price: '2 690',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/66ca1302-d104-4bc2-b98f-a9bbd4a9a6f1.jpg',
-    time: '50 часов'
-  }
-];
+import CandleCard from '@/components/CandleCard';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -150,31 +100,53 @@ const Index = () => {
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {candles.map((candle) => (
-              <Card key={candle.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
-                <div className="aspect-square overflow-hidden bg-secondary/20">
-                  <img 
-                    src={candle.image} 
-                    alt={candle.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-serif font-semibold mb-2">{candle.name}</h3>
-                  <p className="text-muted-foreground mb-4 text-sm">{candle.description}</p>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-                    <Icon name="Flame" size={16} />
-                    <span>15 часов горения</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-primary">1200</span>
-                    <Button>
-                      В корзину
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <CandleCard 
+              name="Лавандовый сон"
+              description="Успокаивающий аромат лаванды для крепкого сна"
+              price="2 490"
+              image="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/66ca1302-d104-4bc2-b98f-a9bbd4a9a6f1.jpg"
+              time="45 часов горения"
+            />
+            
+            <CandleCard 
+              name="Ванильный уют"
+              description="Тёплый сладкий аромат для домашнего комфорта"
+              price="2 490"
+              image="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/a5b93351-195d-49ee-ac65-3e63fcab40a6.jpg"
+              time="45 часов горения"
+            />
+            
+            <CandleCard 
+              name="Цитрусовая свежесть"
+              description="Бодрящий аромат апельсина и лимона"
+              price="2 490"
+              image="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/75938731-724b-4352-bd6a-d6b0604d9bb0.jpg"
+              time="45 часов горения"
+            />
+            
+            <CandleCard 
+              name="Древесные ноты"
+              description="Благородный аромат сандала и кедра"
+              price="2 690"
+              image="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/dff2e544-bf90-4086-a9ed-75d11a798add.jpg"
+              time="50 часов горения"
+            />
+            
+            <CandleCard 
+              name="Морской бриз"
+              description="Свежий аромат океана и морской соли"
+              price="2 490"
+              image="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/6f5539a4-783c-4708-aa11-0e546778138c.jpg"
+              time="45 часов горения"
+            />
+            
+            <CandleCard 
+              name="Цветочная гармония"
+              description="Нежный букет жасмина и розы"
+              price="2 690"
+              image="https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/66ca1302-d104-4bc2-b98f-a9bbd4a9a6f1.jpg"
+              time="50 часов горения"
+            />
           </div>
         </div>
       </section>
