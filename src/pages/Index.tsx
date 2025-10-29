@@ -164,10 +164,10 @@ const Index = () => {
                   <p className="text-muted-foreground mb-4 text-sm">{candle.description}</p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                     <Icon name="Flame" size={16} />
-                    <span>{candle.time} горения</span>
+                    <span>15 часов горения</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-primary">{candle.price} ₽</span>
+                    <span className="text-2xl font-bold text-primary">1300</span>
                     <Button>
                       В корзину
                     </Button>
