@@ -20,7 +20,7 @@ const Candle1 = () => {
           <span>45 часов горения</span>
         </div>
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-primary">2 490 ₽</span>
+          <span className="text-2xl font-bold text-primary">1300 ₽</span>
           <Button>
             В корзину
           </Button>
