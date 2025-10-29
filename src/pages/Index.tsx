@@ -283,12 +283,14 @@ const Index = () => {
               </Card>
             </a>
             
-            <Card className="inline-block">
-              <CardContent className="p-6 flex items-center gap-3">
-                <Icon name="Send" size={20} className="text-primary" />
-                <span className="font-medium">@lizassxs</span>
-              </CardContent>
-            </Card>
+            <a href="https://t.me/lizassxs" target="_blank" rel="noopener noreferrer">
+              <Card className="inline-block hover:shadow-lg transition-shadow cursor-pointer">
+                <CardContent className="p-6 flex items-center gap-3">
+                  <Icon name="Send" size={20} className="text-primary" />
+                  <span className="font-medium">@lizassxs</span>
+                </CardContent>
+              </Card>
+            </a>
 
           </div>
           
