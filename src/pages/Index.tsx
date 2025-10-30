@@ -50,7 +50,7 @@ const Index = () => {
           <Card className="bg-primary/10 border-primary/20">
             <CardContent className="p-4 flex items-center gap-3">
               <div className="bg-primary/20 p-2 rounded-lg">
-                <Icon name="Smartphone" size={24} className="text-primary animate-pulse" />
+                <Icon name="Smartphone" size={24} className="text-primary animate-rotate-phone" />
               </div>
               <p className="text-sm text-foreground">
                 Для лучшего просмотра переверните телефон в горизонтальное положение

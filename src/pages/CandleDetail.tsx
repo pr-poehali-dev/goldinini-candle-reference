@@ -26,7 +26,7 @@ const candles: Record<string, CandleData> = {
   '2': {
     id: '2',
     name: 'Ванильный уют',
-    description: 'Тёплый сладкий аромат для домашнего комфорта',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/a5b93351-195d-49ee-ac65-3e63fcab40a6.jpg',
     fullDescription: 'Свеча с насыщенным ароматом ванили наполнит ваш дом теплом и уютом. Сладкие ноты создадут атмосферу комфорта и безмятежности.',
@@ -35,7 +35,7 @@ const candles: Record<string, CandleData> = {
   '3': {
     id: '3',
     name: 'Цитрусовая свежесть',
-    description: 'Бодрящий аромат апельсина и лимона',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/75938731-724b-4352-bd6a-d6b0604d9bb0.jpg',
     fullDescription: 'Освежающая свеча с яркими цитрусовыми нотами апельсина и лимона зарядит энергией и поднимет настроение. Идеальна для утреннего пробуждения и продуктивного дня.',
@@ -44,7 +44,7 @@ const candles: Record<string, CandleData> = {
   '4': {
     id: '4',
     name: 'Древесные ноты',
-    description: 'Благородный аромат сандала и кедра',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 690 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/dff2e544-bf90-4086-a9ed-75d11a798add.jpg',
     fullDescription: 'Глубокая свеча с благородным ароматом сандала и кедра создаст атмосферу спокойствия и умиротворения. Идеальна для медитации и релаксации.',
@@ -53,7 +53,7 @@ const candles: Record<string, CandleData> = {
   '5': {
     id: '5',
     name: 'Морской бриз',
-    description: 'Свежий аромат океана и морской соли',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/6f5539a4-783c-4708-aa11-0e546778138c.jpg',
     fullDescription: 'Освежающая свеча с ароматом морского бриза и соли перенесет вас на берег океана. Создает ощущение свободы и свежести.',
@@ -71,7 +71,7 @@ const candles: Record<string, CandleData> = {
   '7': {
     id: '7',
     name: 'Лесная прохлада',
-    description: 'Свежий аромат хвои и эвкалипта',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Освежающая свеча с ароматом хвои и эвкалипта создаст атмосферу лесной прогулки. Очищает воздух и поднимает настроение.',
@@ -80,7 +80,7 @@ const candles: Record<string, CandleData> = {
   '8': {
     id: '8',
     name: 'Пряный апельсин',
-    description: 'Теплый аромат апельсина с корицей',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 590 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Согревающая свеча с ароматом апельсина и корицы создаст праздничное настроение. Идеальна для холодных вечеров.',
@@ -89,7 +89,7 @@ const candles: Record<string, CandleData> = {
   '9': {
     id: '9',
     name: 'Морской бриз',
-    description: 'Свежесть океана и морской соли',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 790 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Освежающая свеча премиум-класса с интенсивным ароматом океана и морской соли. Создает атмосферу морского побережья.',
@@ -98,7 +98,7 @@ const candles: Record<string, CandleData> = {
   '10': {
     id: '10',
     name: 'Шоколадный соблазн',
-    description: 'Насыщенный аромат горького шоколада',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 890 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Роскошная свеча с глубоким ароматом горького шоколада. Создает атмосферу изысканности и наслаждения.',
@@ -107,7 +107,7 @@ const candles: Record<string, CandleData> = {
   '11': {
     id: '11',
     name: 'Сладкая карамель',
-    description: 'Теплая карамель с нотками ванили',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 690 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Нежная свеча с ароматом карамели и ванили создаст атмосферу сладкого уюта. Идеальна для создания домашней атмосферы.',
@@ -116,7 +116,7 @@ const candles: Record<string, CandleData> = {
   '12': {
     id: '12',
     name: 'Зимняя сказка',
-    description: 'Имбирь, гвоздика и мандарин',
+    description: 'Аромат выбирается Вами из предложенных',
     price: '2 990 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Праздничная свеча с согревающими нотами имбиря, гвоздики и сладкого мандарина. Создает новогоднее настроение круглый год.',

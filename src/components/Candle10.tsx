@@ -19,7 +19,7 @@ const Candle10 = () => {
       </div>
       <CardContent className="p-6">
         <h3 className="text-xl font-serif font-semibold mb-2">Шоколадный соблазн</h3>
-        <p className="text-muted-foreground mb-4 text-sm">Насыщенный аромат горького шоколада</p>
+        <p className="text-muted-foreground mb-4 text-sm">Аромат выбирается Вами из предложенных</p>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-primary">2 890 ₽</span>
           <Button onClick={(e) => {
