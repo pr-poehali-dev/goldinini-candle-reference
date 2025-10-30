@@ -45,7 +45,22 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home" className="pt-32 pb-20 px-4">
+      <div className="pt-24 pb-4 px-4 md:hidden">
+        <div className="container mx-auto">
+          <Card className="bg-primary/10 border-primary/20">
+            <CardContent className="p-4 flex items-center gap-3">
+              <div className="bg-primary/20 p-2 rounded-lg">
+                <Icon name="Smartphone" size={24} className="text-primary animate-pulse" />
+              </div>
+              <p className="text-sm text-foreground">
+                Для лучшего просмотра переверните телефон в горизонтальное положение
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      <section id="home" className="pt-8 md:pt-32 pb-20 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">

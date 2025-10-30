@@ -11,8 +11,6 @@ interface CandleData {
   image: string;
   fullDescription: string;
   ingredients: string[];
-  burnTime: string;
-  weight: string;
 }
 
 const candles: Record<string, CandleData> = {
@@ -23,9 +21,7 @@ const candles: Record<string, CandleData> = {
     price: '1300 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Нежная свеча с ароматом свежевыпеченного лимонного пирога создаст атмосферу домашнего уюта и спокойствия. Идеально подходит для вечернего отдыха и релаксации.',
-    ingredients: ['Соевый воск', 'Эфирное масло лимона', 'Натуральные ароматизаторы', 'Хлопковый фитиль'],
-    burnTime: '40-45 часов',
-    weight: '200 г'
+    ingredients: ['Соевый воск', 'Эфирное масло лимона', 'Натуральные ароматизаторы', 'Хлопковый фитиль']
   },
   '2': {
     id: '2',
@@ -34,9 +30,7 @@ const candles: Record<string, CandleData> = {
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/a5b93351-195d-49ee-ac65-3e63fcab40a6.jpg',
     fullDescription: 'Свеча с насыщенным ароматом ванили наполнит ваш дом теплом и уютом. Сладкие ноты создадут атмосферу комфорта и безмятежности.',
-    ingredients: ['Соевый воск', 'Натуральный экстракт ванили', 'Эфирные масла', 'Хлопковый фитиль'],
-    burnTime: '50-55 часов',
-    weight: '250 г'
+    ingredients: ['Соевый воск', 'Натуральный экстракт ванили', 'Эфирные масла', 'Хлопковый фитиль']
   },
   '3': {
     id: '3',
@@ -45,9 +39,7 @@ const candles: Record<string, CandleData> = {
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/75938731-724b-4352-bd6a-d6b0604d9bb0.jpg',
     fullDescription: 'Освежающая свеча с яркими цитрусовыми нотами апельсина и лимона зарядит энергией и поднимет настроение. Идеальна для утреннего пробуждения и продуктивного дня.',
-    ingredients: ['Соевый воск', 'Эфирное масло апельсина', 'Эфирное масло лимона', 'Хлопковый фитиль'],
-    burnTime: '50-55 часов',
-    weight: '250 г'
+    ingredients: ['Соевый воск', 'Эфирное масло апельсина', 'Эфирное масло лимона', 'Хлопковый фитиль']
   },
   '4': {
     id: '4',
@@ -56,9 +48,7 @@ const candles: Record<string, CandleData> = {
     price: '2 690 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/dff2e544-bf90-4086-a9ed-75d11a798add.jpg',
     fullDescription: 'Глубокая свеча с благородным ароматом сандала и кедра создаст атмосферу спокойствия и умиротворения. Идеальна для медитации и релаксации.',
-    ingredients: ['Соевый воск', 'Эфирное масло сандала', 'Эфирное масло кедра', 'Хлопковый фитиль'],
-    burnTime: '50-55 часов',
-    weight: '250 г'
+    ingredients: ['Соевый воск', 'Эфирное масло сандала', 'Эфирное масло кедра', 'Хлопковый фитиль']
   },
   '5': {
     id: '5',
@@ -67,9 +57,7 @@ const candles: Record<string, CandleData> = {
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/6f5539a4-783c-4708-aa11-0e546778138c.jpg',
     fullDescription: 'Освежающая свеча с ароматом морского бриза и соли перенесет вас на берег океана. Создает ощущение свободы и свежести.',
-    ingredients: ['Соевый воск', 'Морские минералы', 'Натуральные ароматизаторы', 'Хлопковый фитиль'],
-    burnTime: '50-55 часов',
-    weight: '250 г'
+    ingredients: ['Соевый воск', 'Морские минералы', 'Натуральные ароматизаторы', 'Хлопковый фитиль']
   },
   '6': {
     id: '6',
@@ -78,9 +66,7 @@ const candles: Record<string, CandleData> = {
     price: '1 000 ₽',
     image: 'https://cdn.poehali.dev/files/8a4101e0-3ac4-419a-a6bc-911dd1f6369d.png',
     fullDescription: 'Уникальная фигурная свеча в форме пуделя. Вы можете выбрать любой аромат из нашей коллекции. Идеальный подарок для любителей собак.',
-    ingredients: ['Соевый воск', 'Аромат на выбор', 'Безопасные красители', 'Хлопковый фитиль'],
-    burnTime: '30-35 часов',
-    weight: '150 г'
+    ingredients: ['Соевый воск', 'Аромат на выбор', 'Безопасные красители', 'Хлопковый фитиль']
   },
   '7': {
     id: '7',
@@ -89,9 +75,7 @@ const candles: Record<string, CandleData> = {
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Освежающая свеча с ароматом хвои и эвкалипта создаст атмосферу лесной прогулки. Очищает воздух и поднимает настроение.',
-    ingredients: ['Соевый воск', 'Эфирное масло хвои', 'Эфирное масло эвкалипта', 'Хлопковый фитиль'],
-    burnTime: '50-55 часов',
-    weight: '250 г'
+    ingredients: ['Соевый воск', 'Эфирное масло хвои', 'Эфирное масло эвкалипта', 'Хлопковый фитиль']
   },
   '8': {
     id: '8',
@@ -100,9 +84,7 @@ const candles: Record<string, CandleData> = {
     price: '2 590 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Согревающая свеча с ароматом апельсина и корицы создаст праздничное настроение. Идеальна для холодных вечеров.',
-    ingredients: ['Соевый воск', 'Эфирное масло апельсина', 'Экстракт корицы', 'Хлопковый фитиль'],
-    burnTime: '50-55 часов',
-    weight: '250 г'
+    ingredients: ['Соевый воск', 'Эфирное масло апельсина', 'Экстракт корицы', 'Хлопковый фитиль']
   },
   '9': {
     id: '9',
@@ -111,9 +93,7 @@ const candles: Record<string, CandleData> = {
     price: '2 790 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Освежающая свеча премиум-класса с интенсивным ароматом океана и морской соли. Создает атмосферу морского побережья.',
-    ingredients: ['Соевый воск', 'Морские минералы премиум', 'Натуральные ароматизаторы', 'Хлопковый фитиль'],
-    burnTime: '55-60 часов',
-    weight: '300 г'
+    ingredients: ['Соевый воск', 'Морские минералы премиум', 'Натуральные ароматизаторы', 'Хлопковый фитиль']
   },
   '10': {
     id: '10',
@@ -122,9 +102,7 @@ const candles: Record<string, CandleData> = {
     price: '2 890 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Роскошная свеча с глубоким ароматом горького шоколада. Создает атмосферу изысканности и наслаждения.',
-    ingredients: ['Соевый воск', 'Экстракт какао', 'Натуральный шоколадный аромат', 'Хлопковый фитиль'],
-    burnTime: '55-60 часов',
-    weight: '300 г'
+    ingredients: ['Соевый воск', 'Экстракт какао', 'Натуральный шоколадный аромат', 'Хлопковый фитиль']
   },
   '11': {
     id: '11',
@@ -133,9 +111,7 @@ const candles: Record<string, CandleData> = {
     price: '2 690 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Нежная свеча с ароматом карамели и ванили создаст атмосферу сладкого уюта. Идеальна для создания домашней атмосферы.',
-    ingredients: ['Соевый воск', 'Карамельный экстракт', 'Экстракт ванили', 'Хлопковый фитиль'],
-    burnTime: '50-55 часов',
-    weight: '250 г'
+    ingredients: ['Соевый воск', 'Карамельный экстракт', 'Экстракт ванили', 'Хлопковый фитиль']
   },
   '12': {
     id: '12',
@@ -144,9 +120,7 @@ const candles: Record<string, CandleData> = {
     price: '2 990 ₽',
     image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg',
     fullDescription: 'Праздничная свеча с согревающими нотами имбиря, гвоздики и сладкого мандарина. Создает новогоднее настроение круглый год.',
-    ingredients: ['Соевый воск', 'Эфирное масло имбиря', 'Экстракт гвоздики', 'Эфирное масло мандарина', 'Хлопковый фитиль'],
-    burnTime: '55-60 часов',
-    weight: '300 г'
+    ingredients: ['Соевый воск', 'Эфирное масло имбиря', 'Экстракт гвоздики', 'Эфирное масло мандарина', 'Хлопковый фитиль']
   }
 };
 
@@ -209,27 +183,6 @@ const CandleDetail = () => {
                     </li>
                   ))}
                 </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Icon name="Clock" size={18} className="text-primary" />
-                      <span className="text-sm font-medium">Время горения</span>
-                    </div>
-                    <p className="text-muted-foreground">{candle.burnTime}</p>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Icon name="Weight" size={18} className="text-primary" />
-                      <span className="text-sm font-medium">Вес</span>
-                    </div>
-                    <p className="text-muted-foreground">{candle.weight}</p>
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
