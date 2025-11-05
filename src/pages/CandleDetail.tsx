@@ -133,6 +133,10 @@ const CandleDetail = () => {
   
   const [isEditingDescription, setIsEditingDescription] = useState(false);
   const [editedDescription, setEditedDescription] = useState(candle?.fullDescription || '');
+  
+  const [isEditingIngredients, setIsEditingIngredients] = useState(false);
+  const [editedIngredients, setEditedIngredients] = useState<string[]>(candle?.ingredients || []);
+  const [newIngredient, setNewIngredient] = useState('');
 
   if (!candle) {
     return (
@@ -217,18 +221,111 @@ const CandleDetail = () => {
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-semibold mb-3 flex items-center gap-2">
-                  <Icon name="Leaf" size={20} className="text-primary" />
-                  Состав
-                </h3>
-                <ul className="space-y-2">
-                  {candle.ingredients.map((ingredient, index) => (
-                    <li key={index} className="text-sm text-muted-foreground flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      {ingredient}
-                    </li>
-                  ))}
-                </ul>
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="font-semibold flex items-center gap-2">
+                    <Icon name="Leaf" size={20} className="text-primary" />
+                    Состав
+                  </h3>
+                  {!isEditingIngredients && (
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      onClick={() => setIsEditingIngredients(true)}
+                    >
+                      <Icon name="Pencil" size={16} className="mr-1" />
+                      Редактировать
+                    </Button>
+                  )}
+                </div>
+                
+                {isEditingIngredients ? (
+                  <div className="space-y-3">
+                    <ul className="space-y-2">
+                      {editedIngredients.map((ingredient, index) => (
+                        <li key={index} className="flex items-center gap-2">
+                          <input
+                            type="text"
+                            value={ingredient}
+                            onChange={(e) => {
+                              const updated = [...editedIngredients];
+                              updated[index] = e.target.value;
+                              setEditedIngredients(updated);
+                            }}
+                            className="flex-1 px-3 py-1.5 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                          />
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            onClick={() => {
+                              const updated = editedIngredients.filter((_, i) => i !== index);
+                              setEditedIngredients(updated);
+                            }}
+                          >
+                            <Icon name="X" size={16} />
+                          </Button>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    <div className="flex gap-2">
+                      <input
+                        type="text"
+                        value={newIngredient}
+                        onChange={(e) => setNewIngredient(e.target.value)}
+                        placeholder="Добавить ингредиент..."
+                        className="flex-1 px-3 py-1.5 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        onKeyPress={(e) => {
+                          if (e.key === 'Enter' && newIngredient.trim()) {
+                            setEditedIngredients([...editedIngredients, newIngredient.trim()]);
+                            setNewIngredient('');
+                          }
+                        }}
+                      />
+                      <Button
+                        size="sm"
+                        onClick={() => {
+                          if (newIngredient.trim()) {
+                            setEditedIngredients([...editedIngredients, newIngredient.trim()]);
+                            setNewIngredient('');
+                          }
+                        }}
+                      >
+                        <Icon name="Plus" size={16} />
+                      </Button>
+                    </div>
+                    
+                    <div className="flex gap-2 pt-2">
+                      <Button 
+                        size="sm" 
+                        onClick={() => {
+                          setIsEditingIngredients(false);
+                        }}
+                      >
+                        Сохранить
+                      </Button>
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        onClick={() => {
+                          setEditedIngredients(candle.ingredients);
+                          setNewIngredient('');
+                          setIsEditingIngredients(false);
+                        }}
+                      >
+                        Отмена
+                      </Button>
+                    </div>
+                  </div>
+                ) : (
+                  <ul className="space-y-2">
+                    {editedIngredients.map((ingredient, index) => (
+                      <li key={index} className="text-sm text-muted-foreground flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                        {ingredient}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </CardContent>
             </Card>
 
