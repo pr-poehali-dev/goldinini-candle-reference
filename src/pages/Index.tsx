@@ -158,7 +158,7 @@ const Index = () => {
                   <Icon name="Gift" size={64} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-serif font-semibold mb-2">Маленький бокс</h3>
-                <p className="text-muted-foreground mb-4 text-sm">Секретный набор для создания уютной атмосферы</p>
+                <p className="text-muted-foreground mb-4 text-sm">1 свечка, арома-саше, открытки, наклейки и другие приятные мелочи</p>
                 <div className="text-2xl font-bold text-primary">1 500 ₽</div>
               </CardContent>
             </Card>
@@ -169,7 +169,7 @@ const Index = () => {
                   <Icon name="Gift" size={64} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-serif font-semibold mb-2">Средний бокс</h3>
-                <p className="text-muted-foreground mb-4 text-sm">Секретный набор для особенного подарка</p>
+                <p className="text-muted-foreground mb-4 text-sm">2 свечки, арома-саше, открытки, наклейки и другие приятные мелочи</p>
                 <div className="text-2xl font-bold text-primary">2 500 ₽</div>
               </CardContent>
             </Card>
@@ -180,7 +180,7 @@ const Index = () => {
                   <Icon name="Gift" size={64} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-serif font-semibold mb-2">Большой бокс</h3>
-                <p className="text-muted-foreground mb-4 text-sm">Секретный премиум-набор с эксклюзивными свечами</p>
+                <p className="text-muted-foreground mb-4 text-sm">От 3 свечек, арома-саше, открытки, наклейки и множество других сюрпризов</p>
                 <div className="text-2xl font-bold text-primary">5 500 ₽</div>
               </CardContent>
             </Card>
