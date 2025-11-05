@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
@@ -20,7 +21,7 @@ const candles: Record<string, CandleData> = {
     description: 'Аромат выбирается Вами из предложенных',
     price: '1 300 ₽',
     image: 'https://cdn.poehali.dev/files/fd34102a-17bf-4c27-8be9-6c71fe6ef70e.png',
-    fullDescription: 'Нежная голубая свеча с рельефной текстурой, украшенная белым кружевом и хлопковыми цветками. Создаёт атмосферу спокойствия и уюта.',
+    fullDescription: 'Нежная голубая свеча с рельефной текстурой и хлопковыми цветками. Создаёт атмосферу спокойствия и уюта.',
     ingredients: ['Соевый воск', 'Аромат на выбор', 'Натуральный декор', 'Хлопковый фитиль']
   },
   '2': {
@@ -29,7 +30,7 @@ const candles: Record<string, CandleData> = {
     description: 'Аромат выбирается Вами из предложенных',
     price: '1 300 ₽',
     image: 'https://cdn.poehali.dev/files/fd34102a-17bf-4c27-8be9-6c71fe6ef70e.png',
-    fullDescription: 'Нежная голубая свеча с рельефной текстурой, украшенная белым кружевом и хлопковыми цветками. Создаёт атмосферу спокойствия и уюта.',
+    fullDescription: 'Нежная голубая свеча с рельефной текстурой и хлопковыми цветками. Создаёт атмосферу спокойствия и уюта.',
     ingredients: ['Соевый воск', 'Аромат на выбор', 'Натуральный декор', 'Хлопковый фитиль']
   },
   '3': {
@@ -47,8 +48,8 @@ const candles: Record<string, CandleData> = {
     description: 'Аромат выбирается Вами из предложенных',
     price: '1 300 ₽',
     image: 'https://cdn.poehali.dev/files/7b231460-5e7a-48a5-ae59-c43f01a15a1f.png',
-    fullDescription: 'Элегантная двухцветная свеча кофейно-молочных оттенков с белым кружевом. Создаёт уютную атмосферу домашнего тепла.',
-    ingredients: ['Соевый воск', 'Аромат на выбор', 'Кружевной декор', 'Хлопковый фитиль']
+    fullDescription: 'Элегантная двухцветная свеча кофейно-молочных оттенков. Создаёт уютную атмосферу домашнего тепла.',
+    ingredients: ['Соевый воск', 'Аромат на выбор', 'Натуральный декор', 'Хлопковый фитиль']
   },
   '5': {
     id: '5',
@@ -56,7 +57,7 @@ const candles: Record<string, CandleData> = {
     description: 'Аромат выбирается Вами из предложенных',
     price: '2 490 ₽',
     image: 'https://cdn.poehali.dev/files/2bd4ffb2-5835-4c40-aa2b-63d3b9fa463e.png',
-    fullDescription: 'Элегантная свеча в форме морской ракушки с декоративной жемчужиной. Создаёт морскую атмосферу и дарит ощущение свежести.',
+    fullDescription: 'Изысканная декоративная свеча. Создаёт морскую атмосферу и дарит ощущение свежести.',
     ingredients: ['Соевый воск', 'Аромат на выбор', 'Декоративные элементы', 'Хлопковый фитиль']
   },
   '6': {
@@ -74,7 +75,7 @@ const candles: Record<string, CandleData> = {
     description: 'Аромат выбирается Вами из предложенных',
     price: '150 ₽',
     image: 'https://cdn.poehali.dev/files/9a61e030-1d62-480c-96d9-bf7c6ba3cd8f.png',
-    fullDescription: 'Милые фигурные свечи в форме лапок и облачка. Идеальный подарок для любителей домашних питомцев и уютной атмосферы.',
+    fullDescription: 'Милые фигурные свечи в форме лапок. Идеальный подарок для любителей домашних питомцев и уютной атмосферы.',
     ingredients: ['Соевый воск', 'Аромат на выбор', 'Безопасные красители', 'Хлопковый фитиль']
   },
   '8': {
@@ -129,6 +130,9 @@ const CandleDetail = () => {
   const navigate = useNavigate();
   
   const candle = id ? candles[id] : null;
+  
+  const [isEditingDescription, setIsEditingDescription] = useState(false);
+  const [editedDescription, setEditedDescription] = useState(candle?.fullDescription || '');
 
   if (!candle) {
     return (
@@ -166,7 +170,49 @@ const CandleDetail = () => {
             <div>
               <h1 className="text-4xl font-serif font-bold mb-4">{candle.name}</h1>
               <p className="text-xl text-muted-foreground mb-6">{candle.description}</p>
-              <p className="text-foreground/80 leading-relaxed">{candle.fullDescription}</p>
+              
+              {isEditingDescription ? (
+                <div className="space-y-2">
+                  <textarea
+                    value={editedDescription}
+                    onChange={(e) => setEditedDescription(e.target.value)}
+                    className="w-full min-h-[100px] p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                  <div className="flex gap-2">
+                    <Button 
+                      size="sm" 
+                      onClick={() => {
+                        setIsEditingDescription(false);
+                      }}
+                    >
+                      Сохранить
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      variant="outline"
+                      onClick={() => {
+                        setEditedDescription(candle.fullDescription);
+                        setIsEditingDescription(false);
+                      }}
+                    >
+                      Отмена
+                    </Button>
+                  </div>
+                </div>
+              ) : (
+                <div className="relative group">
+                  <p className="text-foreground/80 leading-relaxed">{editedDescription}</p>
+                  <Button
+                    size="sm"
+                    variant="ghost"
+                    className="absolute -right-2 -top-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                    onClick={() => setIsEditingDescription(true)}
+                  >
+                    <Icon name="Pencil" size={16} className="mr-1" />
+                    Редактировать
+                  </Button>
+                </div>
+              )}
             </div>
 
             <Card>
