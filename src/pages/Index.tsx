@@ -144,7 +144,62 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-4 bg-secondary/20">
+      <section className="py-20 px-4 bg-secondary/20">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-serif font-bold text-center mb-4">Секретные боксы</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Уникальные наборы свечей в красивой упаковке — идеальный подарок для близких
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="aspect-square bg-primary/5 rounded-lg mb-4 flex items-center justify-center">
+                  <Icon name="Gift" size={64} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-serif font-semibold mb-2">Маленький бокс</h3>
+                <p className="text-muted-foreground mb-4 text-sm">Секретный набор для создания уютной атмосферы</p>
+                <div className="text-2xl font-bold text-primary">1 500 ₽</div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="aspect-square bg-primary/5 rounded-lg mb-4 flex items-center justify-center">
+                  <Icon name="Gift" size={64} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-serif font-semibold mb-2">Средний бокс</h3>
+                <p className="text-muted-foreground mb-4 text-sm">Секретный набор для особенного подарка</p>
+                <div className="text-2xl font-bold text-primary">2 500 ₽</div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="aspect-square bg-primary/5 rounded-lg mb-4 flex items-center justify-center">
+                  <Icon name="Gift" size={64} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-serif font-semibold mb-2">Большой бокс</h3>
+                <p className="text-muted-foreground mb-4 text-sm">Секретный премиум-набор с эксклюзивными свечами</p>
+                <div className="text-2xl font-bold text-primary">5 500 ₽</div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-primary/30">
+              <CardContent className="p-6">
+                <div className="aspect-square bg-primary/5 rounded-lg mb-4 flex items-center justify-center">
+                  <Icon name="Sparkles" size={64} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-serif font-semibold mb-2">Новогодний бокс</h3>
+                <p className="text-muted-foreground mb-3 text-sm">Праздничный набор: лошадка, шишка и свеча-куб</p>
+                <div className="text-2xl font-bold text-primary">2 500 ₽</div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-20 px-4 bg-primary/5">
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
