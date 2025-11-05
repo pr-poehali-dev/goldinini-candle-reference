@@ -20,7 +20,7 @@ const candles: Record<string, CandleData> = {
     name: 'Прогноз погоды',
     description: 'Аромат выбирается Вами из предложенных',
     price: '1 300 ₽',
-    image: 'https://cdn.poehali.dev/files/fd34102a-17bf-4c27-8be9-6c71fe6ef70e.png',
+    image: 'https://cdn.poehali.dev/files/426ad8c3-927a-4a2d-9e5f-3e28c19462a9.png',
     fullDescription: 'Нежная голубая свеча с рельефной текстурой и хлопковыми цветками. Создаёт атмосферу спокойствия и уюта.',
     ingredients: ['Соевый воск', 'Аромат на выбор', 'Натуральный декор', 'Хлопковый фитиль']
   },
