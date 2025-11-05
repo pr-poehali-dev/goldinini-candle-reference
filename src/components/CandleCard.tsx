@@ -27,11 +27,8 @@ const CandleCard = ({ name, description, price, image, time }: CandleCardProps) 
           <Icon name="Flame" size={16} />
           <span>{time}</span>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
           <span className="text-2xl font-bold text-primary">1200 </span>
-          <Button>
-            В корзину
-          </Button>
         </div>
       </CardContent>
     </Card>

@@ -21,13 +21,8 @@ const Candle4 = () => {
       <CardContent className="p-6">
         <h3 className="text-xl font-serif font-semibold mb-2">Кофе с молоком</h3>
         <p className="text-muted-foreground mb-4 text-sm">Аромат выбирается Вами из предложенных.</p>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
           <span className="text-2xl font-bold text-primary">1 300 ₽</span>
-          <Button onClick={(e) => {
-            e.stopPropagation();
-          }}>
-            В корзину
-          </Button>
         </div>
       </CardContent>
     </Card>

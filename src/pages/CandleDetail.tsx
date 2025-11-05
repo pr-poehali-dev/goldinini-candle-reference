@@ -329,12 +329,8 @@ const CandleDetail = () => {
               </CardContent>
             </Card>
 
-            <div className="flex items-center justify-between p-6 bg-secondary/20 rounded-lg">
+            <div className="flex items-center justify-center p-6 bg-secondary/20 rounded-lg">
               <span className="text-3xl font-bold text-primary">{candle.price}</span>
-              <Button size="lg" className="text-lg px-8">
-                <Icon name="ShoppingCart" size={20} className="mr-2" />
-                В корзину
-              </Button>
             </div>
           </div>
         </div>
