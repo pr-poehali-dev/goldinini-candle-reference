@@ -19,7 +19,7 @@ const Candle1 = () => {
         />
       </div>
       <CardContent className="p-6">
-        <h3 className="text-xl font-serif font-semibold mb-2">Прогноз погоды</h3>
+        <h3 className="text-xl font-serif font-semibold mb-2">Венера Милосская</h3>
         <p className="text-muted-foreground mb-4 text-sm">Аромат выбирается Вами из предложенных.</p>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-primary">1300 ₽</span>
