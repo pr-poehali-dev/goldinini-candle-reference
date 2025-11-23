@@ -57,7 +57,7 @@ const candles: Record<string, CandleData> = {
     id: '8',
     name: 'Пряный апельсин',
     price: '2 590 ₽',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg'
+    image: 'https://cdn.poehali.dev/files/da3052dc-b037-4442-9675-eac006bd2a61.png'
   },
   '9': {
     id: '9',
