@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
@@ -92,10 +92,35 @@ const CandleDetail = () => {
   const candle = id ? candles[id] : null;
   
   const [isEditingName, setIsEditingName] = useState(false);
-  const [editedName, setEditedName] = useState(candle?.name || '');
-  
   const [isEditingPrice, setIsEditingPrice] = useState(false);
-  const [editedPrice, setEditedPrice] = useState(candle?.price || '');
+  
+  const getStoredData = (candleId: string) => {
+    const stored = localStorage.getItem(`candle_${candleId}`);
+    return stored ? JSON.parse(stored) : null;
+  };
+  
+  const storedData = candle ? getStoredData(candle.id) : null;
+  const [editedName, setEditedName] = useState(storedData?.name || candle?.name || '');
+  const [editedPrice, setEditedPrice] = useState(storedData?.price || candle?.price || '');
+  
+  useEffect(() => {
+    if (candle) {
+      const stored = getStoredData(candle.id);
+      if (stored) {
+        setEditedName(stored.name);
+        setEditedPrice(stored.price);
+      } else {
+        setEditedName(candle.name);
+        setEditedPrice(candle.price);
+      }
+    }
+  }, [candle?.id]);
+  
+  const saveToStorage = (name: string, price: string) => {
+    if (candle) {
+      localStorage.setItem(`candle_${candle.id}`, JSON.stringify({ name, price }));
+    }
+  };
 
   if (!candle) {
     return (
@@ -142,7 +167,10 @@ const CandleDetail = () => {
                   <div className="flex gap-2">
                     <Button 
                       size="sm" 
-                      onClick={() => setIsEditingName(false)}
+                      onClick={() => {
+                        saveToStorage(editedName, editedPrice);
+                        setIsEditingName(false);
+                      }}
                     >
                       Сохранить
                     </Button>
@@ -185,7 +213,10 @@ const CandleDetail = () => {
                   <div className="flex gap-2">
                     <Button 
                       size="sm" 
-                      onClick={() => setIsEditingPrice(false)}
+                      onClick={() => {
+                        saveToStorage(editedName, editedPrice);
+                        setIsEditingPrice(false);
+                      }}
                     >
                       Сохранить
                     </Button>
