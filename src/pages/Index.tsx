@@ -11,9 +11,7 @@ import Candle6 from '@/components/Candle6';
 import Candle7 from '@/components/Candle7';
 import Candle8 from '@/components/Candle8';
 import Candle9 from '@/components/Candle9';
-import Candle10 from '@/components/Candle10';
-import Candle11 from '@/components/Candle11';
-import Candle12 from '@/components/Candle12';
+
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -137,9 +135,7 @@ const Index = () => {
             <Candle7 />
             <Candle8 />
             <Candle9 />
-            <Candle10 />
-            <Candle11 />
-            <Candle12 />
+
           </div>
           
           <div className="mt-16 max-w-3xl mx-auto space-y-6">
