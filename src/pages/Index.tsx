@@ -122,7 +122,7 @@ const Index = () => {
 
       <section id="catalog" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-serif font-bold text-center mb-4">Коллекция свечей</h2>
+          <h2 className="text-4xl font-serif font-bold text-center mb-4">Коллекция свечей и аромасаше</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Найдите свой идеальный аромат среди нашей тщательно подобранной коллекции
           </p>
