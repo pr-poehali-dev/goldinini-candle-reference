@@ -13,13 +13,13 @@ const Candle5 = () => {
     >
       <div className="aspect-square overflow-hidden bg-secondary/20">
         <img 
-          src="https://cdn.poehali.dev/files/2bd4ffb2-5835-4c40-aa2b-63d3b9fa463e.png"
-          alt="Ракушка с жемчужинкой"
+          src="https://cdn.poehali.dev/files/f7f32e3e-dec0-4cb6-981a-7149123cdf2f.png"
+          alt="Кофе с молоком"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
       </div>
       <CardContent className="p-6">
-        <h3 className="text-xl font-serif font-semibold mb-2">Лазурный шепот</h3>
+        <h3 className="text-xl font-serif font-semibold mb-2">Кофе с молоком</h3>
         <p className="text-muted-foreground mb-4 text-sm">Аромат выбирается Вами из предложенных.</p>
         <div className="flex items-center justify-center">
           <span className="text-2xl font-bold text-primary">1 300 ₽</span>

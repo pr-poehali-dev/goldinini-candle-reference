@@ -13,8 +13,8 @@ const Candle3 = () => {
     >
       <div className="aspect-square overflow-hidden bg-secondary/20">
         <img 
-          src="https://cdn.poehali.dev/files/03a56975-7aee-4225-87ed-95ac168fd738.png"
-          alt="Зимняя ягода"
+          src="https://cdn.poehali.dev/files/9f3da750-1ceb-4489-8094-48504ce58537.png"
+          alt="Запах нового года"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
       </div>

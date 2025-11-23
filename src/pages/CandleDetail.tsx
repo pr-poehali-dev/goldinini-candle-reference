@@ -13,33 +13,33 @@ interface CandleData {
 const candles: Record<string, CandleData> = {
   '1': {
     id: '1',
-    name: 'Венера Милосская',
+    name: 'Лазурный шепот',
     price: '400 ₽',
-    image: 'https://cdn.poehali.dev/files/426ad8c3-927a-4a2d-9e5f-3e28c19462a9.png'
+    image: 'https://cdn.poehali.dev/files/2f339704-1966-45d4-9231-907c209dad15.png'
   },
   '2': {
     id: '2',
-    name: 'Прогноз погоды',
+    name: 'Куб',
     price: '1 300 ₽',
-    image: 'https://cdn.poehali.dev/files/fd34102a-17bf-4c27-8be9-6c71fe6ef70e.png'
+    image: 'https://cdn.poehali.dev/files/1816d47f-20ac-406b-8e59-e52c4ee2c1df.png'
   },
   '3': {
     id: '3',
     name: 'Запах нового года',
     price: '700 ₽',
-    image: 'https://cdn.poehali.dev/files/710ec8a2-253c-4f1f-aefd-67b8122dc860.png'
+    image: 'https://cdn.poehali.dev/files/9f3da750-1ceb-4489-8094-48504ce58537.png'
   },
   '4': {
     id: '4',
-    name: 'Кофе с молоком',
+    name: 'Прогноз погоды',
     price: '1 300 ₽',
-    image: 'https://cdn.poehali.dev/files/7b231460-5e7a-48a5-ae59-c43f01a15a1f.png'
+    image: 'https://cdn.poehali.dev/files/13a8d235-97c3-4441-b7f7-4cf37fea55ef.png'
   },
   '5': {
     id: '5',
-    name: 'Ракушка с жемчужинкой',
-    price: '2 490 ₽',
-    image: 'https://cdn.poehali.dev/files/2bd4ffb2-5835-4c40-aa2b-63d3b9fa463e.png'
+    name: 'Кофе с молоком',
+    price: '1 300 ₽',
+    image: 'https://cdn.poehali.dev/files/f7f32e3e-dec0-4cb6-981a-7149123cdf2f.png'
   },
   '6': {
     id: '6',
