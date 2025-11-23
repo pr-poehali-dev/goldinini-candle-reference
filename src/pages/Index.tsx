@@ -149,9 +149,8 @@ const Index = () => {
                   <Icon name="Info" size={24} className="text-primary" />
                   <h3 className="text-xl font-serif font-semibold text-foreground">Важная информация</h3>
                 </div>
-                <p className="text-muted-foreground">
-                  По поводу цвета, аромата и декора уточняйте у мастера или менеджера
-                </p>
+                <p className="text-muted-foreground">По поводу цвета, аромата и декора уточняйте у мастера или менеджера.
+Подберем походящие!</p>
               </CardContent>
             </Card>
             
