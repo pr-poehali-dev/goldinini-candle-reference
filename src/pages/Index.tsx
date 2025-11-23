@@ -153,7 +153,7 @@ const Index = () => {
                   <p className="text-muted-foreground mb-4">Смотрите больше наших уникальных свечей и новинок в нашем телеграм-канале</p>
                   <Button 
                     size="lg" 
-                    onClick={() => window.open('https://t.me/goldinini', '_blank')}
+                    onClick={() => window.open('https://t.me/Milen_2003', '_blank')}
                     className="gap-2"
                   >
                     <Icon name="Send" size={20} />
