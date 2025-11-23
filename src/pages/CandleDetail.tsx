@@ -187,16 +187,8 @@ const CandleDetail = () => {
                   </div>
                 </div>
               ) : (
-                <div className="mb-4 flex items-center gap-2">
+                <div className="mb-4">
                   <h1 className="text-4xl font-serif font-bold">{editedName}</h1>
-                  <Button 
-                    size="sm" 
-                    variant="ghost"
-                    onClick={() => setIsEditingName(true)}
-                    className="text-primary hover:text-primary/80"
-                  >
-                    <Icon name="Edit" size={16} />
-                  </Button>
                 </div>
               )}
             </div>
@@ -233,16 +225,8 @@ const CandleDetail = () => {
                   </div>
                 </div>
               ) : (
-                <div className="flex items-center gap-2">
+                <div>
                   <span className="text-4xl font-bold text-primary">{editedPrice}</span>
-                  <Button 
-                    size="sm" 
-                    variant="ghost"
-                    onClick={() => setIsEditingPrice(true)}
-                    className="text-primary hover:text-primary/80"
-                  >
-                    <Icon name="Edit" size={16} />
-                  </Button>
                 </div>
               )}
             </div>
