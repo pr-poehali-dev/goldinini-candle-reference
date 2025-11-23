@@ -51,7 +51,7 @@ const candles: Record<string, CandleData> = {
     id: '7',
     name: 'Нежные лапки',
     price: '150 ₽',
-    image: 'https://cdn.poehali.dev/files/9a61e030-1d62-480c-96d9-bf7c6ba3cd8f.png'
+    image: 'https://cdn.poehali.dev/files/cdfdf1dc-3138-4bd7-bec9-83378e91849f.png'
   },
   '8': {
     id: '8',

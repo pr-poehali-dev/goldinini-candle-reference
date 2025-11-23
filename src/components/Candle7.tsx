@@ -12,7 +12,7 @@ const Candle7 = () => {
     >
       <div className="aspect-square overflow-hidden bg-secondary/20">
         <img 
-          src="https://cdn.poehali.dev/files/9a61e030-1d62-480c-96d9-bf7c6ba3cd8f.png"
+          src="https://cdn.poehali.dev/files/cdfdf1dc-3138-4bd7-bec9-83378e91849f.png"
           alt="Нежные лапки"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
