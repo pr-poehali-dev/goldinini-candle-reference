@@ -142,7 +142,19 @@ const Index = () => {
             <Candle12 />
           </div>
           
-          <div className="mt-16 max-w-3xl mx-auto">
+          <div className="mt-16 max-w-3xl mx-auto space-y-6">
+            <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
+              <CardContent className="p-6 text-center">
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <Icon name="Info" size={24} className="text-primary" />
+                  <h3 className="text-xl font-serif font-semibold text-foreground">Важная информация</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  По поводу цвета, аромата и декора уточняйте у мастера или менеджера
+                </p>
+              </CardContent>
+            </Card>
+            
             <Card className="bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border-primary/20 overflow-hidden">
               <CardContent className="p-8 flex flex-col md:flex-row items-center gap-6">
                 <div className="bg-primary/20 p-4 rounded-full">
