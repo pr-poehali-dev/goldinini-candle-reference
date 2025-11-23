@@ -18,7 +18,7 @@ const Candle8 = () => {
         />
       </div>
       <CardContent className="p-6">
-        <h3 className="text-xl font-serif font-semibold mb-2">Пряный апельсин</h3>
+        <h3 className="text-xl font-serif font-semibold mb-2">Куб</h3>
         <p className="text-muted-foreground mb-4 text-sm">Аромат выбирается Вами из предложенных</p>
         <div className="flex items-center justify-center">
           <span className="text-2xl font-bold text-primary">2 590 ₽</span>
