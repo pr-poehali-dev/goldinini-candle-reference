@@ -63,7 +63,7 @@ const candles: Record<string, CandleData> = {
     id: '9',
     name: 'Морской бриз',
     price: '2 790 ₽',
-    image: 'https://cdn.poehali.dev/projects/16b05c1d-663d-4820-9c61-a04f755b87d2/files/e17a7599-e115-4a40-b5de-03853d3edba5.jpg'
+    image: 'https://cdn.poehali.dev/files/ca99a300-cd5a-49c1-bda7-929d6d452c30.png'
   },
   '10': {
     id: '10',
