@@ -22,7 +22,7 @@ const Candle5 = () => {
         <h3 className="text-xl font-serif font-semibold mb-2">Ракушка с жемчужинкой</h3>
         <p className="text-muted-foreground mb-4 text-sm">Аромат выбирается Вами из предложенных.</p>
         <div className="flex items-center justify-center">
-          <span className="text-2xl font-bold text-primary">2 490 ₽</span>
+          <span className="text-2xl font-bold text-primary">1 300 ₽</span>
         </div>
       </CardContent>
     </Card>
