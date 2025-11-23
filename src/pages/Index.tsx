@@ -141,6 +141,28 @@ const Index = () => {
             <Candle11 />
             <Candle12 />
           </div>
+          
+          <div className="mt-16 max-w-3xl mx-auto">
+            <Card className="bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border-primary/20 overflow-hidden">
+              <CardContent className="p-8 flex flex-col md:flex-row items-center gap-6">
+                <div className="bg-primary/20 p-4 rounded-full">
+                  <Icon name="MessageCircle" size={48} className="text-primary" />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl font-serif font-bold mb-2 text-foreground">Остальной ассортимент</h3>
+                  <p className="text-muted-foreground mb-4">Смотрите больше наших уникальных свечей и новинок в нашем телеграм-канале</p>
+                  <Button 
+                    size="lg" 
+                    onClick={() => window.open('https://t.me/goldinini', '_blank')}
+                    className="gap-2"
+                  >
+                    <Icon name="Send" size={20} />
+                    Перейти в Telegram
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
